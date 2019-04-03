@@ -1,3 +1,3 @@
 ### Belajar
 
-1. baris satu, aku.
+1. baris satu.
