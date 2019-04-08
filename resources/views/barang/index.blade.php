@@ -19,10 +19,11 @@
             <table 
                 data-toggle="table"
                 data-pagination="true"
-                data-search="true">
+                data-search="true"
+                data-sort-stable="true">
                 <thead>
                     <tr>
-                        <th data-field="id">ID</th>
+                        <th data-field="id" data-sortable="true">ID</th>
                         <th data-field="name">Name</th>
                         <th data-field="tipe">Tipe</th>
                         <th data-field="deskripsi">deskripsi</th>
