@@ -16,13 +16,17 @@
             Tambah Data
             </button>
         </div>
-            <table class="table table-hover">
-                <thead class="table-secondary">
+            <table 
+                data-toggle="table"
+                data-pagination="true"
+                data-search="true">
+                <thead>
                     <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Tipe</th>
-                    <th>deskripsi</th>
+                        <th data-field="id">ID</th>
+                        <th data-field="name">Name</th>
+                        <th data-field="tipe">Tipe</th>
+                        <th data-field="deskripsi">deskripsi</th>
+                        <th >Aksi</th>
                     </tr>
                 </thead>
                 @foreach($data_barang as $barang)

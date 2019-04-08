@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/barang', 'BarangController@index');
+Route::get('/api/barang', 'BarangController@indexApi');
 Route::post('/barang/create', 'BarangController@create');
 Route::get('barang/{id}/edit', 'BarangController@edit');
 Route::post('barang/{id}/update', 'BarangController@update');

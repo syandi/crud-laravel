@@ -22,6 +22,11 @@ class BarangController extends Controller
         return view('barang.index', ['data_barang' => $data_barang]);
     }
 
+    public function indexApi(){
+        $data_barang = \App\Barang::all();
+        return $data_barang;
+    }
+
     public function create(Request $request){
         \App\Barang::create($request->all());
         return redirect('/barang')->with('sukses','Data berhasil disimpan...');
