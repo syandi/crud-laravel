@@ -26,3 +26,6 @@ Route::post('barang/{id}/update', 'BarangController@update');
 Route::get('barang/{id}/delete', 'BarangController@delete');
 Route::post('barang/search', 'BarangController@search');
 Route::get('/table', 'BarangController@table');
+
+Route::resource('categories', 'CategoryController');
+Route::get('api/category', 'CategoryController@apiIndex');
