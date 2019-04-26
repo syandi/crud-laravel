@@ -14,9 +14,13 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        return view('category.index');
     }
 
+    public function apiIndex()
+    {
+        return Category::all();
+    }
     /**
      * Show the form for creating a new resource.
      *
